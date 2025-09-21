@@ -6,5 +6,8 @@ function solution(n) {
     // 배열 -> 문자열 -> 숫자
     answer = Number(arr.join(""));
     
+    // 한줄 구현
+    // return parseInt((n+"").split("").sort().reverse().join(""));
+    
     return answer;
 }
