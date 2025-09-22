@@ -3,8 +3,10 @@ function solution(absolutes, signs) {
     
     for (var i = 0; i < absolutes.length; i++) {
         signs[i] ? answer += absolutes[i] : answer -= absolutes[i];
-        console.log(answer);
     }
+    
+    // reduce()로 한줄 코드
+    // answer = absolutes.reduce((acc, val, i) => acc + (val * (signs[i] ? 1 : -1)), 0);
     
     return answer;
 }
