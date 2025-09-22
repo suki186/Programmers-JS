@@ -2,7 +2,7 @@
     ** -- 런타임 에러 주의
     공백이 연속으로 있는 경우 "for the  last week"
     -> ["for","the","","last","week"]
-    -> 빈문자열인지 체크 필요(삼항연산자)
+    -> 빈문자열인지 체크 필요(삼항연산자) or charAt 사용
 */
 function solution(s) {
     var answer = '';
