@@ -8,7 +8,7 @@ function solution(s) {
     var answer = '';
     
     const arr = s.split(" ").map(e => 
-        e ? e[0].toUpperCase() + e.slice(1).toLowerCase() : ""
+        e.charAt(0).toUpperCase() + e.slice(1).toLowerCase()
     );
     answer = arr.join(" ");
  
