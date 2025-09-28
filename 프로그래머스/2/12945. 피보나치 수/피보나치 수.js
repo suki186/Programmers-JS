@@ -5,9 +5,9 @@ function solution(n) {
     if(n < 2) return arr[n];
     
     for(let i = 2; i <= n; i++) {
-        arr.push((arr[i-1] + arr[i-2])  % 1234567);
+        arr.push((arr[i-1] + arr[i-2]) % 1234567);
     }
     
-    // %를 여기서 딱 한번 하면 overflow
+    // %를 여기서 하면 overflow (n이 자료형 범위 넘어감)
     return arr[n];
 }
