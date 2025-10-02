@@ -14,3 +14,17 @@ function solution(s) {
     
     return answer;
 }
+
+// map 2번 버전
+function solution2(s) {
+    let answer = '';
+    
+    answer = s.split(" ")
+        .map((word) => 
+             [...word].map((e, i) => 
+                i % 2 === 0 ? e.toUpperCase() : e.toLowerCase()
+            ).join("")
+        ).join(" ")
+    
+    return answer;
+}
