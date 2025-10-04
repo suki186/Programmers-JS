@@ -10,4 +10,7 @@ function solution(arr)
     }
 
     return answer;
+    
+    // 한줄(.filter 사용)
+    // return arr.filter((val,index) => val != arr[index+1]);
 }
